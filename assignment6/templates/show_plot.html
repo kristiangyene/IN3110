@@ -1,0 +1,41 @@
+<!doctype html>
+</body>
+<body bgcolor="#80bbc5">
+    <h1> Diabetes plot </h1>
+    {% if error %}
+    <h2> Invalid input! Showing default plot. </h2>
+    {% endif %}
+    <p> Choose plot information: </p>
+    <div class="container">
+	    <form action="/values_changed" method="POST">
+	        <select name="classifiers">
+	            {% for classifier in classifiers %}
+	            <option name="dropdown" value="{{classifier}}"> {{classifier}} </option>
+	            {% endfor %}
+	        </select>
+            <br>
+            <p> Choose features: </p>
+            <select name="x_features">
+	            {% for feature in features %}
+	            <option name="dropdown" value="{{feature}}"> {{feature}} </option>
+	            {% endfor %}
+	        </select>
+            <br>
+            <select name="y_features">
+	            {% for feature in features %}
+	            <option name="dropdown" value="{{feature}}"> {{feature}} </option>
+	            {% endfor %}
+	        </select>
+	        <input type="submit" value="Submit">
+	    </form>
+  	</div>
+      <img src="{{url_for('static', filename='plot.jpg')}}" />
+      <p>Training accuracy: {{p1}}</p> 
+      <p>Validation accuracy: {{p2}}</p>
+    <br>
+    <a href="/"> Back </a>
+    <br>
+    <a href="help"> Help </a>
+</body>
+
+</html>

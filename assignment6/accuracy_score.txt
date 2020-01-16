@@ -1,0 +1,27 @@
+Accuracy for features age and mass (using KNN):
+training set: 1.0
+validation set: 0.63
+
+Accuracy for features age and mass (using SVC):
+training set: 1.0
+validation set: 0.73
+
+----------------------------------------------------------
+
+Accuracy for features glucose and insulin (using KNN):
+training set: 1.0
+validation set: 0.73
+
+Accuracy for features glucose and insulin (using SVC):
+training set: 1.0
+validation set: 0.77
+
+----------------------------------------------------------
+
+Accuracy for features triceps and age (using KNN):
+training set: 1.0
+validation set: 0.53
+
+Accuracy for features triceps and age (using SVC):
+training set: 1.0
+validation set: 0.68

@@ -1,0 +1,10 @@
+(h, w, c) = src.shape = (482, 642, 3)
+(h, w, c) = dst.shape = (480, 640, 3)
+
+Filename: beatles.jpg
+Computation time using pure python: 2.7694921493530273seconds
+
+Filename: beatles.jpg
+Computation time using numpy: 0.017058849334716797seconds
+
+Time saved using numpy ≈ 2.75 s

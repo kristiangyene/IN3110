@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module data</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>data</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/kristiangyene/Library/Mobile%20Documents/com~apple~CloudDocs/Documents/IN3110/IN3110-kristsgy/assignment6/data.py">/Users/kristiangyene/Library/Mobile Documents/com~apple~CloudDocs/Documents/IN3110/IN3110-kristsgy/assignment6/data.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="pandas.html">pandas</a><br>
+</td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-extract_data"><strong>extract_data</strong></a>(filename)</dt><dd><tt>Removes&nbsp;the&nbsp;missing&nbsp;values.&nbsp;Then&nbsp;splits&nbsp;the&nbsp;data&nbsp;into&nbsp;a&nbsp;training&nbsp;set&nbsp;and&nbsp;<br>
+a&nbsp;validation&nbsp;set.&nbsp;Lets&nbsp;the&nbsp;training&nbsp;set&nbsp;be&nbsp;80%&nbsp;of&nbsp;the&nbsp;total&nbsp;samples,&nbsp;and<br>
+still&nbsp;keeps&nbsp;the&nbsp;proportions&nbsp;of&nbsp;the&nbsp;positive&nbsp;samples&nbsp;the&nbsp;same&nbsp;in&nbsp;the&nbsp;<br>
+training&nbsp;and&nbsp;validation&nbsp;sets.&nbsp;<br>
+&nbsp;<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filename(string):&nbsp;filename&nbsp;for&nbsp;the&nbsp;file&nbsp;containing&nbsp;data<br>
+&nbsp;<br>
+ret:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_training,&nbsp;data_validation(pandas&nbsp;dataset):&nbsp;separated&nbsp;datasets<br>
+&nbsp;<br>
+&nbsp;<br>
+Dataset&nbsp;proportions:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_training&nbsp;length:&nbsp;314<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_validation&nbsp;length:&nbsp;78<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Total&nbsp;negative&nbsp;values:&nbsp;262&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%:&nbsp;210&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%:&nbsp;52<br>
+&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Total&nbsp;positive&nbsp;values:&nbsp;130<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;80%:&nbsp;104<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20%:&nbsp;26</tt></dd></dl>
+ <dl><dt><a name="-get_splitted_dataset"><strong>get_splitted_dataset</strong></a>(dataset, xaxis, yaxis)</dt><dd><tt>Splits&nbsp;the&nbsp;dataset&nbsp;into&nbsp;two.&nbsp;Separated&nbsp;by&nbsp;the&nbsp;"diabetes"&nbsp;value.&nbsp;<br>
+&nbsp;<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dataset(pandas&nbsp;dataset):&nbsp;data&nbsp;from&nbsp;the&nbsp;sourcefile<br>
+&nbsp;&nbsp;&nbsp;&nbsp;xaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;x-axis<br>
+&nbsp;&nbsp;&nbsp;&nbsp;yaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;y-axis<br>
+&nbsp;<br>
+ret:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;dataset_pos,&nbsp;dataset_neg(pandas&nbsp;dataset):&nbsp;separated&nbsp;datasets</tt></dd></dl>
+ <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>Simple&nbsp;main&nbsp;program&nbsp;to&nbsp;test&nbsp;the&nbsp;methods&nbsp;of&nbsp;the&nbsp;file.</tt></dd></dl>
+ <dl><dt><a name="-plot_data"><strong>plot_data</strong></a>(data_training, data_validation, xaxis, yaxis)</dt><dd><tt>Creates&nbsp;a&nbsp;scatter&nbsp;plot&nbsp;coloring&nbsp;the&nbsp;two&nbsp;classes&nbsp;differently.<br>
+&nbsp;<br>
+args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_training(pandas&nbsp;dataset):&nbsp;the&nbsp;training&nbsp;dataset<br>
+&nbsp;&nbsp;&nbsp;&nbsp;data_validation(pandas_dataset):&nbsp;the&nbsp;validation&nbsp;dataset<br>
+&nbsp;&nbsp;&nbsp;&nbsp;xaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;x-axis<br>
+&nbsp;&nbsp;&nbsp;&nbsp;yaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;y-axis</tt></dd></dl>
+</td></tr></table>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+        <tr bgcolor="#7799ee">
+        <td valign=bottom>&nbsp;<br>
+        <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>fitting</strong></big></big></font></td
+        ><td align=right valign=bottom
+        ><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/kristiangyene/Library/Mobile%20Documents/com~apple~CloudDocs/Documents/IN3110/IN3110-kristsgy/assignment6/fitting.py">/Users/kristiangyene/Library/Mobile Documents/com~apple~CloudDocs/Documents/IN3110/IN3110-kristsgy/assignment6/fitting.py</a></font></td></tr></table>
+            <p></p>
+        <p>
+        <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+        <tr bgcolor="#aa55cc">
+        <td colspan=3 valign=bottom>&nbsp;<br>
+        <font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+            
+        <tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+        <td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="data.html">data</a><br>
+        <a href="sklearn.metrics.html">sklearn.metrics</a><br>
+        </td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+        <a href="pandas.html">pandas</a><br>
+        </td><td width="25%" valign=top><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+        </td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+        <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+        <tr bgcolor="#eeaa77">
+        <td colspan=3 valign=bottom>&nbsp;<br>
+        <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+            
+        <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+        <td width="100%"><dl><dt><a name="-KNN_classifier"><strong>KNN_classifier</strong></a>(data_training, data_validation, xaxis, yaxis, n)</dt><dd><tt>The&nbsp;function&nbsp;calculates&nbsp;a&nbsp;trained&nbsp;classifier&nbsp;using&nbsp;the&nbsp;k-nearest&nbsp;<br>
+        neighbors&nbsp;(KNN)&nbsp;algorithm.<br>
+        &nbsp;<br>
+        args:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_training(pandas&nbsp;dataset):&nbsp;the&nbsp;training&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_validation(pandas_dataset):&nbsp;the&nbsp;validation&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;x-axis<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;y-axis<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n(int):&nbsp;number&nbsp;of&nbsp;neighbors&nbsp;for&nbsp;the&nbsp;calculation<br>
+        &nbsp;<br>
+        ret:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logreg(classifier):&nbsp;trained&nbsp;classifier</tt></dd></dl>
+         <dl><dt><a name="-SVC_classifier"><strong>SVC_classifier</strong></a>(data_training, data_validation, xaxis, yaxis)</dt><dd><tt>The&nbsp;function&nbsp;calculates&nbsp;a&nbsp;trained&nbsp;classifier&nbsp;using&nbsp;Support&nbsp;Vector&nbsp;<br>
+        Classifier&nbsp;(SVC).<br>
+        &nbsp;<br>
+        args:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_training(pandas&nbsp;dataset):&nbsp;the&nbsp;training&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_validation(pandas_dataset):&nbsp;the&nbsp;validation&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;x-axis<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;y-axis<br>
+        &nbsp;<br>
+        ret:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;logreg(classifier):&nbsp;trained&nbsp;classifier</tt></dd></dl>
+         <dl><dt><a name="-fit"><strong>fit</strong></a>(data_training, data_validation, classifier, xaxis, yaxis, n_neighbors=1)</dt><dd><tt>Calls&nbsp;on&nbsp;the&nbsp;suited&nbsp;method&nbsp;for&nbsp;classifier&nbsp;calculation.<br>
+        &nbsp;<br>
+        args:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_training(pandas&nbsp;dataset):&nbsp;the&nbsp;training&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_validation(pandas_dataset):&nbsp;the&nbsp;validation&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classifier(classifier):&nbsp;trained&nbsp;classifier<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;x-axis<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;y-axis<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n_neighbors(int):&nbsp;number&nbsp;of&nbsp;neighbors&nbsp;for&nbsp;the&nbsp;KNN&nbsp;calculation<br>
+        &nbsp;<br>
+        &nbsp;<br>
+        return:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trained&nbsp;accuray,&nbsp;prediction&nbsp;accuracy(str):&nbsp;metrics.accuracy_score</tt></dd></dl>
+         <dl><dt><a name="-getAccuracy"><strong>getAccuracy</strong></a>(data_training, data_validation, classifier, xaxis, yaxis)</dt><dd><tt>Calculates&nbsp;the&nbsp;accuracy&nbsp;score&nbsp;for&nbsp;both&nbsp;the&nbsp;training&nbsp;set&nbsp;and&nbsp;validation<br>
+        set&nbsp;by&nbsp;predicting&nbsp;with&nbsp;the&nbsp;classifier.<br>
+        &nbsp;<br>
+        args:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_training(pandas&nbsp;dataset):&nbsp;the&nbsp;training&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data_validation(pandas_dataset):&nbsp;the&nbsp;validation&nbsp;dataset<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;classifier(classifier):&nbsp;trained&nbsp;classifier<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;x-axis<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;yaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;y-axis<br>
+        &nbsp;<br>
+        &nbsp;<br>
+        return:<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trained&nbsp;accuray,&nbsp;prediction&nbsp;accuracy(str):&nbsp;metrics.accuracy_score</tt></dd></dl>
+         <dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>Simple&nbsp;main&nbsp;program&nbsp;to&nbsp;test&nbsp;the&nbsp;methods&nbsp;of&nbsp;the&nbsp;file.</tt></dd></dl>
+        </td></tr></table>
+        <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+                <tr bgcolor="#7799ee">
+                <td valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>visualize</strong></big></big></font></td
+                ><td align=right valign=bottom
+                ><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/kristiangyene/Library/Mobile%20Documents/com~apple~CloudDocs/Documents/IN3110/IN3110-kristsgy/assignment6/visualize.py">/Users/kristiangyene/Library/Mobile Documents/com~apple~CloudDocs/Documents/IN3110/IN3110-kristsgy/assignment6/visualize.py</a></font></td></tr></table>
+                    <p></p>
+                <p>
+                <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+                <tr bgcolor="#aa55cc">
+                <td colspan=3 valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+                    
+                <tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+                <td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="data.html">data</a><br>
+                <a href="fitting.html">fitting</a><br>
+                </td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+                <a href="os.html">os</a><br>
+                </td><td width="25%" valign=top><a href="pylab.html">pylab</a><br>
+                </td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+                <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+                <tr bgcolor="#eeaa77">
+                <td colspan=3 valign=bottom>&nbsp;<br>
+                <font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+                    
+                <tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+                <td width="100%"><dl><dt><a name="-main"><strong>main</strong></a>()</dt><dd><tt>Simple&nbsp;main&nbsp;program&nbsp;to&nbsp;test&nbsp;the&nbsp;methods&nbsp;of&nbsp;the&nbsp;file.</tt></dd></dl>
+                 <dl><dt><a name="-plot_diabetes"><strong>plot_diabetes</strong></a>(data_training, data_validation, classifier, xaxis, yaxis)</dt><dd><tt>Adds&nbsp;colored&nbsp;areas&nbsp;that&nbsp;represent&nbsp;which&nbsp;class&nbsp;the&nbsp;classifier&nbsp;predicts&nbsp;in&nbsp;<br>
+                that&nbsp;area.&nbsp;Colors&nbsp;the&nbsp;areas&nbsp;in&nbsp;a&nbsp;slightly&nbsp;lighter&nbsp;color&nbsp;compared&nbsp;to&nbsp;the&nbsp;data&nbsp;<br>
+                points&nbsp;of&nbsp;the&nbsp;same&nbsp;class&nbsp;so&nbsp;that&nbsp;you&nbsp;can&nbsp;see&nbsp;them.<br>
+                &nbsp;<br>
+                &nbsp;args:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;data_training(pandas&nbsp;dataset):&nbsp;the&nbsp;training&nbsp;dataset<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;data_validation(pandas_dataset):&nbsp;the&nbsp;validation&nbsp;dataset<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;classifier(classifier):&nbsp;trained&nbsp;classifier<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;xaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;x-axis<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;yaxis(string):&nbsp;feature&nbsp;for&nbsp;the&nbsp;y-axis<br>
+                &nbsp;<br>
+                &nbsp;<br>
+                &nbsp;return:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trained&nbsp;accuray,&nbsp;prediction&nbsp;accuracy(str):&nbsp;metrics.accuracy_score</tt></dd></dl>
+                </td></tr></table>
+</body></html>

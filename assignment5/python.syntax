@@ -1,0 +1,12 @@
+"(\sdef\s)": func_def
+"(\\bclass\s\w+)": class_def
+"(\\bimport\s)|(\\bfrom\s)": import
+"(\@\w+)|(\\bdef\s|\\bself|\\bprint)": decorator
+"(\\btry\\b)|(\\bexcept\\b)": try_except
+"(\\bif\\b|\\belif\\b|\\belse\\b)": cond_stmt
+"(\\bfor\\b|\\bin\\b)": for-loop
+"(#.*)": comment
+"(\\bwhile )": while-loop
+"('''[\s\S]+?''')|(\"\"\"[\s\S]+?\"\"\")": multiline
+"(\".*?\")|('.*?')": string
+"(\\bTrue|\\bFalse|\\bNone)": special

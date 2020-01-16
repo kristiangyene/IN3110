@@ -1,0 +1,46 @@
+Filename: beatles.jpg
+Computation time using pure python: 2.697098970413208seconds
+
+Filename: beatles.jpg
+Computation time using numpy: 0.014256954193115234seconds
+
+Filename: beatles.jpg
+Computation time using numba: 0.6375830173492432seconds
+
+Time saved using numpy ≈ 2.68 s
+
+Time saved using numba ≈ 2.06 s
+
+-------------------------------------------------
+
+Filename: katt.jpg
+Computation time using pure python: 1.8527560234069824seconds
+
+Filename: katt.jpg
+Computation time using numpy: 0.009704828262329102seconds
+
+Filename: katt.jpg
+Computation time using numba: 0.637969970703125seconds
+
+Time saved using numpy ≈ 1.84 s
+
+Time saved using numba ≈ 1.21 s
+
+-------------------------------------------------
+
+Filename: tiger.jpg
+Computation time using pure python: 5.902753114700317seconds
+
+Filename: tiger.jpg
+Computation time using numpy: 0.03100299835205078seconds
+
+Filename: tiger.jpg
+Computation time using numba: 0.625478982925415seconds
+
+Time saved using numpy ≈ 5.87 s
+
+Time saved using numba ≈ 5.28 s
+
+-------------------------------------------------
+
+

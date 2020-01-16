@@ -1,0 +1,12 @@
+comment: 0;32
+func_def: 0;34
+class_def: 0;93
+string: 0;33
+multiline: 0;33
+import: 0;93
+special: 0;91
+decorator: 0;36
+try_except: 0;35
+for-loop: 0;35
+while-loop: 0;35
+cond_stmt: 0;35

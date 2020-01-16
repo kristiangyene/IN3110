@@ -1,0 +1,13 @@
+"(\//.*|\/\*.*\*\/)": comment
+"(\".*?\"|\'.*?\')": string
+"(.*\bclass\s)": class_def
+"(\bimport\s)": import
+"(\btrue|\bfalse|\bnull)": special
+"(\bbyte\s|\bshort\s|\bint\s|\blong\s|\bfloat\s|\bdouble\s|\bchar\s|\bboolean\s|\bvoid\s)": primitives
+"(\\bpublic\\b|\\bprivate\\b|\\bprotected\\b|\\bstatic\\b)": access
+"(\@\w+)|(\bdef\s{1}\w|\breturn|\bprintln)": decorator
+"(\b[A-Z]\w+)": capitalized_words
+"(\btry)|(\bcatch)|(\bException)": try_except
+"(\bif\b|\belse\s+if\b|\belse\b)": cond_stmt
+"(\bwhile|(?:==|!=|<>|>|<|>=|<=\s*\w+))": while-loop
+"(\bfor|\b:)": for-loop
